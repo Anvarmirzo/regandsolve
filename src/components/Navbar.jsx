@@ -6,14 +6,16 @@ export function Navbar() {
 
 	return (
 		<nav className='nav'>
-			<div className='container nav__container'>
-				<span className='nav__title nav__logo'>Qiuz app</span>
-				{photoURL && displayName && (
-					<div className='nav__user'>
-						<img className='nav__img' src={photoURL} alt={displayName} />
-						<span className='nav__title'>{displayName}</span>
-					</div>
-				)}
+			<div className='container'>
+				<div className='nav__container'>
+					<span className='nav__title nav__logo'>Qiuz app</span>
+					{photoURL && displayName && (
+						<div className='nav__user'>
+							<img className='nav__img' src={photoURL} alt={displayName} />
+							<span className='nav__title'>{displayName}</span>
+						</div>
+					)}
+				</div>
 			</div>
 		</nav>
 	);

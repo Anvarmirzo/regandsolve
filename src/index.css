@@ -10,6 +10,7 @@ body {
 
 * {
 	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
 }
 
 img {
@@ -213,6 +214,21 @@ button:hover {
 	background-color: rgba(0, 181, 23, 1);
 }
 
+@media (max-width: 480px) {
+	.nav__img {
+		width: 48px;
+	}
+
+	.nav__title {
+		font-size: 16px;
+	}
+
+	.btns-list {
+		width: 200px;
+	}
+}
+
+/* Container breakpoints */
 @media (min-width: 576px) {
 	.container {
 		max-width: 540px;
